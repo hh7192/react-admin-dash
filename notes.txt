@@ -1,0 +1,50 @@
+npx create-create-react-app ./
+
+delete src and public folders
+
+create index.html in public
+    add main div with root id
+
+create index.js
+    import react and create root
+
+create index.css
+    add main styles
+
+create App.jsx
+    add boilerplate and export
+
+create componants in pages folder
+    home , list , login , new , single
+
+npm install sass : using instead of CSS. 
+    SASS: easier, no need to worry of classNames, global vars & funcs, nested styles , etc
+
+create jsx && scss files for each componant.
+
+npm install react-router-dom: for navigating easily between pages
+    https://reactrouter.com/docs/en/v6/getting-started/tutorial 
+    TOUSE: 
+    in App.jsx: 
+      import {BrowserRouter, Routes, Route} from "react-router-dom";
+      <BrowserRouter>
+        <Routes>
+            ---DIFINE ROUTES HERE---
+          </Route>
+        </Routes>
+      </BrowserRouter>
+
+create common componants: sidebar , navbar
+
+in Sidebar.jsx:
+    logo 
+    menu list
+    div including color options (light mode and dark mode)
+
+in sidebar.scss:
+    style each part of sidebar (top, center, bottom)
+
+npm install @mui/material @emotion/react @emotion/styled npm install @mui/icons-material
+    : for using material icons 
+    https://mui.com/material-ui/material-icons/ 
+
