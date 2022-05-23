@@ -16,12 +16,13 @@
 :root {
     --color-primary: #6439ff;
     --color-lightgray: #d3d3d3;
-    --color-darkgray: #959595;
+    --color-darkgray: #8c8c8c;
     --color-white: #ffffff;
     --color-lighthover: #ece8ff;
+    --color-red: #cd0000;
+    --color-green: #009b00;
     --color-dark-theme: #333;
     --color-blue-theme: #0b006a;
-    --color-red: #cd0000;
 
     --transition: all 0.2s ease-out;
     
