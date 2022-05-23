@@ -3,6 +3,8 @@ import List from "./pages/list/List";
 import Login from "./pages/login/Login";
 import New from "./pages/new/New";
 import Single from "./pages/single/Single";
+import {userInputs} from "./formSource";
+import {productInputs} from "./formSource";
 
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
@@ -17,12 +19,18 @@ function App() {
             <Route path='users'>
               <Route index element={<List />} />
               <Route path=':userID' element={<Single />} />
-              <Route path='new' element={<New />} />
+              <Route
+                path='new'
+                element={<New inputs={userInputs} title='Add New User' />}
+              />
             </Route>
             <Route path='products'>
               <Route index element={<List />} />
               <Route path=':productID' element={<Single />} />
-              <Route path='new' element={<New />} />
+              <Route
+                path='new'
+                element={<New inputs={productInputs} title='Add New Product' />}
+              />
             </Route>
           </Route>
         </Routes>

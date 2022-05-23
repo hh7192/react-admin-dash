@@ -1,0 +1,104 @@
+.new {
+    display: flex;
+    width: 100%;
+
+    .new__container {
+        flex: 6;
+
+        .top, .bottom {
+            -webkit-box-shadow: 0px 3px 13px -4px rgba(89,89,89,0.6); 
+            box-shadow: 0px 3px 13px -4px rgba(89,89,89,0.6);
+            padding: 1rem;
+            margin: 2rem;
+            display: flex;
+
+            .title {
+                color: var(--color-lightgray);
+                font-size: 2rem;
+            }
+
+            .left {
+                flex: 1;
+                text-align: center;
+                
+                .newImg {
+                    width: 10rem;
+                    height: 10rem;
+                    border-radius: 50%;
+                    object-fit: contain;
+                }
+            }
+
+            .right {
+                flex: 2;
+                
+                .form {
+                    display: flex;
+                    flex-wrap: wrap;    
+                    gap: 2rem;
+                    justify-content: space-evenly;
+
+                    .input__container {
+                        width: 40%;
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+                        }
+
+                        .input__info {
+                            width: 100%;
+                            border: 1px solid var(--color-primary);
+                            padding: 1rem;
+                            border-radius: 1rem;
+                            transition: var(--transtition);
+
+                            &:focus {
+                                -webkit-box-shadow: 0px 3px 13px -4px rgba(89,89,89,0.6); 
+                                box-shadow: 0px 3px 13px -4px rgba(89,89,89,0.6);
+                            }
+                        }
+                    }
+                }
+
+                .input__file {
+                    display: none;
+                }
+
+                .icon {
+                    cursor: pointer;
+                    font-size: 5rem;
+                    padding: 0.5rem;
+                    border-radius: 1rem;
+                    color: goldenrod;
+                    background: rgba(218, 165, 32, 0.2);
+                    border: 1px solid transparent;
+                    transition: var(--transtition);
+
+                    &:hover {
+                        background: transparent;
+                        border-color: goldenrod;
+                    }
+                }
+
+                .btn {
+                    width: 15rem;
+                    padding: 1rem;
+                    border: none;
+                    border-radius: 1rem;
+                    background-color: var(--color-primary);
+                    color: var(--color-white);
+                    cursor: pointer;
+                    font-weight: 700;
+                    margin-top: 1rem;
+                    transition: var(--transition);
+
+                    &:hover {
+                        background: var(--color-green);
+                    }
+                }
+            }
+        }
+    }
+}
