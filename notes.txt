@@ -48,6 +48,35 @@ npm install @mui/material @emotion/react @emotion/styled npm install @mui/icons-
     : for using material icons 
     https://mui.com/material-ui/material-icons/ 
 
-npm install --save react-circular-progressbar
 
-1:16:20
+FOR PROGRESS BAR:
+npm install --save react-circular-progressbar
+npm install --save --legacy-peer-deps react-circular-progressbar
+
+FOR CHART:
+https://uber.github.io/react-vis/
+https://nivo.rocks/ 
+https://recharts.org/en-US/ 
+https://react-chartjs-2.netlify.app/ 
+
+we use recharts:
+    npm install recharts
+    npm install --save --legacy-peer-deps recharts
+
+in Chart.jsx:
+    import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+    import data
+    paste jsx code 
+
+create Table componant.
+-------------------------- HOME page is done.
+LIST page:
+add sidebar and navbar to list page
+
+create dataTable componant
+import data table from mui.com 
+npm install @mui/x-data-grid
+
+create single page
+
+2:10:22

@@ -1,0 +1,92 @@
+.single {
+    display: flex;
+    width: 100%;
+    
+    .single__container {
+        flex: 6;
+
+        .top {
+            padding: 2rem;
+            display: flex;
+            gap: 2rem;
+
+            .left {
+                flex: 1;
+                padding: 2rem;
+                -webkit-box-shadow: 0px 3px 13px -4px rgba(89,89,89,0.6); 
+                box-shadow: 0px 3px 13px -4px rgba(89,89,89,0.6);
+                position: relative;
+
+                .editButton {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 0.5rem;
+                    font-size: 1.2rem;
+                    border-radius: 0 0 0 1rem; 
+                    color: goldenrod;
+                    background: rgba(218, 165, 32, 0.2);
+                    border: transparent;
+                    cursor: pointer;
+                    transition: var(--transition);
+
+                    &:hover {
+                        background: transparent;
+                    }
+
+                }
+
+                .item {
+                    display: flex;
+                    gap: 2rem;
+
+                    .itemImg {
+                        width: 10rem;
+                        height: 10rem;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .details {
+                        .itemTitle {
+                            margin-bottom: 1.8rem;
+                            color: var(--color-darkgray);
+                        }
+
+                        .detailItem {
+                            margin-bottom: 1.5rem;
+                            font-size: 1.4rem;
+
+                            .itemKey {
+                                font-weight: 600;
+                                color: var(--color-darkgray);
+                                margin-right: 0.7rem;
+                            }
+
+                            .itemValue {
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                flex: 2;
+            }
+        }
+
+        .bottom {
+            padding: 2rem;    
+            -webkit-box-shadow: 0px 3px 13px -4px rgba(89,89,89,0.6); 
+            box-shadow: 0px 3px 13px -4px rgba(89,89,89,0.6);
+            margin: 1rem 2rem;
+        }
+    }
+
+    .title {
+        font-size: 1.6rem;
+        color: var(--color-lightgray);
+        margin-bottom: 2rem;
+    }
+}

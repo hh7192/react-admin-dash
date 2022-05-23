@@ -1,0 +1,38 @@
+.table {
+    .tableCellTitle {
+        font-size: 1rem;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .tableCell {
+        text-align: center;
+    }
+
+    .cellWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .image {
+            width: 3.5rem;
+            aspect-ratio: 1/1;
+            border-radius: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    .status {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+
+        &.Approved {
+            color: var(--color-green);
+            background: rgba(0, 128, 0, 0.2);
+        }
+        &.Pending {
+            color: var(--color-gold);
+            background:rgba(218, 165, 32, 0.2);
+        }
+    }
+}
