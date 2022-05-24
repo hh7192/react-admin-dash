@@ -17,7 +17,7 @@ function App() {
     <div className={darkMode ? "app dark" : "app"}>
       <BrowserRouter>
         <Routes>
-          <Route path='/'>
+          <Route path='/react-admin-dash'>
             <Route index element={<Home />} />
             <Route path='login' element={<Login />} />
             <Route path='users'>
