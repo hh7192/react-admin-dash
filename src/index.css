@@ -22,7 +22,9 @@
     --color-red: #cd0000;
     --color-green: #009b00;
     --color-gold: #d09f22;
-    --color-dark-theme: #333;
+    --color-dark-theme: #222;
+    --color-dark-font: rgb(156, 156, 156);
+    --color-dark-soft: #333;
     --color-blue-theme: #0b006a;
 
     --transition: all 0.2s ease-out;
@@ -42,4 +44,8 @@ body {
 hr {
     height: 0;
     border: 0.5px solid var(--color-lightgray);
+}
+
+a {
+    text-decoration: none;
 }

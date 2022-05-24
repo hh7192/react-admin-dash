@@ -84,4 +84,10 @@ create new pages
 make image display after upload:
     with useState
 
+using react context API for changing the theme
+    create context folder in the src
+context API allows us to reach data from any componant 
+TODO: learn about context API
+TODO: learn Redux
+
 2:10:22

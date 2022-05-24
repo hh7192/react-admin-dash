@@ -12,13 +12,20 @@ import LoginIcon from "@mui/icons-material/Login";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LogoutIcon from "@mui/icons-material/Logout";
+import {Link} from "react-router-dom";
+import {DarkModeContext} from "../../context/darkModeContext";
+import {useContext} from "react";
 
 const Sidebar = () => {
+  const {dispatch} = useContext(DarkModeContext);
+
   return (
-    <nav className='sidebar__container'>
+    <nav className='sidebar'>
       {/* ============================= TOP =============================*/}
       <div className='sidebar__top'>
-        <span className='logo'>HamidreZa</span>
+        <Link to={"/"}>
+          <span className='logo'>HamidreZa</span>
+        </Link>
       </div>
       <hr />
 
@@ -26,19 +33,28 @@ const Sidebar = () => {
       <div className='sidebar__center'>
         <ul>
           <p className='title'>MAIN</p>
-          <li>
-            <DashboardIcon className='icon' />
-            <span>Dashboard</span>
-          </li>
+          <Link to={"/"}>
+            <li>
+              <DashboardIcon className='icon' />
+              <span>Dashboard</span>
+            </li>
+          </Link>
+
           <p className='title'>LISTS</p>
-          <li>
-            <SupervisedUserCircleIcon className='icon' />
-            <span>Users</span>
-          </li>
-          <li>
-            <ShoppingBasketIcon className='icon' />
-            <span>Products</span>
-          </li>
+          <Link to={"/users"}>
+            <li>
+              <SupervisedUserCircleIcon className='icon' />
+              <span>Users</span>
+            </li>
+          </Link>
+
+          <Link to={"/products"}>
+            <li>
+              <ShoppingBasketIcon className='icon' />
+              <span>Products</span>
+            </li>
+          </Link>
+
           <li>
             <LocalMallIcon className='icon' />
             <span>Orders</span>
@@ -83,9 +99,12 @@ const Sidebar = () => {
 
       {/* ============================= BOTTOM =============================*/}
       <div className='sidebar__bottom'>
-        <div className='colorOption'></div>
-        <div className='colorOption'></div>
-        <div className='colorOption'></div>
+        <div
+          className='colorOption'
+          onClick={() => dispatch({type: "LIGHT"})}></div>
+        <div
+          className='colorOption'
+          onClick={() => dispatch({type: "DARK"})}></div>
       </div>
     </nav>
   );

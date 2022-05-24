@@ -1,0 +1,43 @@
+.app.dark {
+    background: var(--color-dark-theme);
+    color: var(--color-dark-font);
+
+    .table {
+        background: var(--color-dark-theme);
+
+        .tableCellTitle, .tableCell {
+            color: var(--color-dark-font);
+        }
+    }
+
+    .sidebar {
+        background: var(--color-dark-theme)
+    }
+
+    ul {
+        li {
+            &:hover {
+                background: var(--color-dark-soft);
+            }
+
+            .icon {
+                color: var(--color-dark-font);
+            }
+        }
+    }
+    .datatable {
+        .dataGrid {
+            color: var(--color-dark-font);
+            border: none;
+
+            .viewButton, .deleteButton, .cellWithStatus {
+                color: var(--color-dark-font);
+                border: none;
+            }
+        }
+    }
+
+    input {
+        background: transparent;
+    }
+}
